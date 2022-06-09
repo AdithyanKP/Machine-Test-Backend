@@ -32,7 +32,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 200,
+      }}
+    >
       <button onClick={() => onClickhandler()}>submit</button>
     </div>
   );
