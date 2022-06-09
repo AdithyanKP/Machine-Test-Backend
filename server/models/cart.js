@@ -11,5 +11,5 @@ const cartSchema = mongoose.Schema({
     },
   ],
 });
-const CartMessage = mongoose.model("CartMessage", cartSchema);
-export default CartMessage;
+const Cart = mongoose.model("Cart", cartSchema);
+export default Cart;
