@@ -3,6 +3,6 @@ import { addToCart } from "../controller/main.js";
 
 const router = express.Router();
 
-router.post("/", addToCart);
+router.post("/addtoCart", addToCart);
 
 export default router;
