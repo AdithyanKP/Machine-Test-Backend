@@ -1,9 +1,15 @@
 import mongoose from "mongoose";
 
-const cartSchema = mongoose({
-  id: Number,
-  name: String,
-  quantity: Number,
+const cartSchema = mongoose.Schema({
+  user: Number,
+  cartItems: [
+    {
+      product: String,
+      quandity: Number,
+      price: Number,
+      total: Number,
+    },
+  ],
 });
 const CartMessage = mongoose.model("CartMessage", cartSchema);
 export default CartMessage;

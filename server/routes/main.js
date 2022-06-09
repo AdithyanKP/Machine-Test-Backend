@@ -1,8 +1,8 @@
 import express from "express";
-import { changeQuandity } from "../controller/main.js";
+import { addToCart } from "../controller/main.js";
 
 const router = express.Router();
 
-router.post("/", changeQuandity);
+router.post("/", addToCart);
 
 export default router;
